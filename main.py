@@ -50,6 +50,6 @@ if resultado > 100:
     print("\nSe liga: Como o bagulho é maior que 100, preciso de uns negócio ai.")
     cpf = input("Digita seu CPF ae fznd favor: \n")
     cartao = input("Agora passa o número do cartão ae: \n")
-    print("\nGratidão malandragem, só regresso pro cê")
+    print("\nGratidão malandragem, só regresso pro cê, vai tomando")
 
 print("="*30)
