@@ -23,23 +23,33 @@ print("[4] Dividir (/)")
 
 opcao = input("Digite ai q numero ce qr: ")
 
-print("\n" + "="*30)
+resultado = None  # Inicializa a variável do resultado
+
+# 5. Processamento dos Cálculos
 if opcao == "1":
     resultado = num1 + num2
-    print(f"Resultado da Soma: {resultado}")
 elif opcao == "2":
     resultado = num1 - num2
-    print(f"Resultado da Subtração: {resultado}")
 elif opcao == "3":
     resultado = num1 * num2
-    print(f"Resultado da Multiplicação: {resultado}")
 elif opcao == "4":
-    # Evita que o programa quebre se o usuário tentar dividir por zero
     if num2 == 0:
-        print("Malandro, não dá pra dividir por zero né")
+        print("Malandro, não dá pra dividir por zero né!")
+        sys.exit()
     else:
         resultado = num1 / num2
-        print(f"Resultado da Divisão: {resultado}")
 else:
-    print("Ce é cego, mlk? Escolhe de 1 a 4, cara. Faz favor fia")
+    print("Tá cego mlk? Escolhe de 1 a 4. Faz favor ne.")
+    sys.exit()
+
+# 6. Verificação do Resultado Maior que 100
+print("\n" + "="*30)
+print(f"Ó quantos que deu aq ó, lerdão: {resultado}")
+
+if resultado > 100:
+    print("\nSe liga: Como o bagulho é maior que 100, preciso de uns negócio ai.")
+    cpf = input("Digita seu CPF ae fznd favor: \n")
+    cartao = input("Agora passa o número do cartão ae: \n")
+    print("\nGratidão malandragem, só regresso pro cê")
+
 print("="*30)
